@@ -20,7 +20,7 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                    docker.image("final2:${env.BUILD_NUMBER}").run("-d -p 8095:8080 --name adamsın")
+                    docker.image("final2:${env.BUILD_NUMBER}").run("-d -p 8095:8080 --name adamsinn")
                 }
             }
   }
